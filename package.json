@@ -1,0 +1,29 @@
+{
+  "name": "htm-preact-osagai",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/htm-preact-osagai.js",
+  "umd:main": "dist/htm-preact-osagai.umd.js",
+  "module": "dist/htm-preact-osagai.mjs",
+  "source": "src/index.js",
+  "scripts": {
+    "start": "microbundle watch",
+    "prettier": "prettier {src/**/*.js,README.md}",
+    "format": "npm run prettier -- --write",
+    "docs": "documentation readme src/** --section=API",
+    "build": "microbundle build --target=browser --external=none",
+    "release": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "author": "Henrique Limas <henrique.ramos.limas@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "htm": "^2.1.1",
+    "osagai": "^0.3.2",
+    "preact": "^8.4.2"
+  },
+  "devDependencies": {
+    "documentation": "^11.0.0",
+    "microbundle": "^0.11.0",
+    "prettier": "^1.18.2"
+  }
+}
