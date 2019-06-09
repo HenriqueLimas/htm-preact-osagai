@@ -71,6 +71,8 @@ import {
 </html>
 ```
 
+[Try this on CodeSandbox](https://codesandbox.io/embed/webcomponents-with-osagai-preact-htm-v1jy3)
+
 ---
 
 ## API
