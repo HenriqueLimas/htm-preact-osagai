@@ -8,6 +8,12 @@ export { default as define } from "./define";
  * @param {any[]} ...values
  * @returns {TemplateResult}
  */
+/**
+ * Component is a base class that you will usually subclass to create stateful Preact components.
+ * [Preact API reference](https://preactjs.com/guide/api-reference)
+ *
+ * @name Component
+ */
 export { html, Component } from "htm/preact";
 
 /**
